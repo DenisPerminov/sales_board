@@ -4,7 +4,7 @@
     <title>SalesBoard</title>
 </head>
 <body>
-<h1>SalesBoard</h1><hr>
+<h1><a href="/">SalesBoard</a></h1><hr>
 <h4>Регистрация</h4>
 <form action="/registration" method="post">
     Имя пользователя: <input type="text" name="name"/><br><br>

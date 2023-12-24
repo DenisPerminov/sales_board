@@ -5,7 +5,8 @@
 <title>SalesBoard</title>
 </head>
 <body>
-<h1>SalesBoard</h1><hr>
+<h1><a href="/">SalesBoard</a></h1><hr>
+<a href="/">На главную страницу</a><hr>
 <h4>Авторизация</h4>
 <form action="/login" method="post">
     Эл. почта: <input type="email" name="username"/><br><br>
