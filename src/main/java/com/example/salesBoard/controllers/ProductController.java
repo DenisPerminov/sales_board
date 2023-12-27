@@ -53,4 +53,9 @@ public class ProductController {
         productService.deleteProduct(id);
         return "redirect:/";
     }
+
+    @GetMapping("/product-add")
+    public String addProduct () {
+        return "/product-add";
+    }
 }

@@ -11,6 +11,7 @@
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
         <input type="submit" value="Выйти"/>
     </form>
+    <a href="/user/${user.id}">Мои товары</a><hr>
     <#if user.isAdmin()>
         <a href="/admin">Панель администратора</a>
     </#if>
@@ -32,15 +33,7 @@
 </#list>
 <#if user.email??>
     <hr>
-    <h3>Создать новый товар</h3>
-    <form action="product/create" method="post" enctype="multipart/form-data">
-        Название объявления: <input type="text" name="title"/><br><br>
-        Описание объявления: <input type="text" name="description"/><br><br>
-        Цена: <input type="number" name="price"/><br><br>
-        Город: <input type="text" name="city"/><br><br>
-        Первая картинка: <input type="file" name="file1"/><br><br>
-        Вторая картинка: <input type="file" name="file2"/><br><br>
-        Третья картинка: <input type="file" name="file3"/><br><br>
+    <form action="/product-add" method="get">
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
         <input type="submit" value="Добавить товар"/>
     </form>

@@ -9,6 +9,7 @@
 <h4>Панель администратора</h4>
 <table border="1">
     <tr>
+        <th>Имя</th>
         <th>Email</th>
         <th>Номер телефона</th>
         <th>Активность</th>
@@ -19,6 +20,7 @@
     </tr>
     <#list users as user>
         <tr>
+            <th>${user.name}</th>
             <th>${user.email}</th>
             <th>${user.phoneNumber}</th>
             <th><#if user.active>Активен<#else>Блокирован</#if></th>
